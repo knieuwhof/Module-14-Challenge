@@ -44,4 +44,4 @@ The new model initially performs better than the tuned trading agorithim in 2016
 
 ### Evaluation Report
 
-The baseline model (SVM), the tuned model, and the new model (Gradient Booster) did not significantly vary in terms of outcomes. Overall, the tuned model performed best, with strategy returns being relatively stable and ending off in 2021 at 0.8. The other two models ended around 0.7. The tuned model performing best demonstrates the importance of feature engineering and trial and error of using various parameters to find the best results. 
+The baseline model (SVM), the tuned model, and the new model (Gradient Booster) did not significantly vary in terms of outcomes. Overall, the tuned model performed best, with strategy returns being relatively stable and ending off in 2021 above 0.8. The other two models ended around 0.7. The tuned model performing best demonstrates the importance of feature engineering and trial and error of using various parameters to find the best results. 
