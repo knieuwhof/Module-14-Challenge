@@ -26,7 +26,7 @@ The performance of the baseline trading algorithm is subpar, evident from the co
 - While leaving the training window at the original 3 months, the short window was increased from 4 to 20 and the long window was increased from 100 to 200. From the classification report, the recall score is 15% for the "sell" signal (compared to 4%) and 87% for the "buy" signal (compared to 96%). The precision is similar at 46% for sell (compared to 43%) and 57% for buy (compared to 56%).  When examining the plot, there doesn’t seem to be much benefit or significant improvement in the cumulative strategy returns when the short and long windows are increased, similar to the result of only expanding the training window.
 
 **Choose the set of parameters that best improved the trading algorithm returns. Save a PNG image of the cumulative product of the actual returns vs. the strategy returns, and document your conclusion.**
-- In search to find the parameters that best improved the trading algorthim returns, I tried numerous combinations of varying windows (long and short) and varying training periods. My thought was that increasing both parameters would increase the outcome of the model, however if increased too much may result in overfitting. Ultimately, I decided upon a training period of 8 months, a short window of 20, and a long window of 200. With these paramteres - I found the recall and precision to be almost 50/50 for both buy and sell signals. The strategy returns with the tuned trading alogirthim yielded slightly higher results as per the plot below - findings show strategy returns sit between 0.8-1, versus 0.6-0.8 with the baseline model.
+- In search to find the parameters that best improved the trading algorthim returns, I tried numerous combinations of varying windows (long and short) and varying training periods. My thought was that increasing both parameters would increase the outcome of the model, however if increased too much may result in overfitting. Ultimately, I decided upon a training period of 8 months, a short window of 20, and a long window of 200. With these paramteres - I found the recall and precision to be almost 50/50 for both buy and sell signals. The strategy returns with the tuned trading alogirthim yielded slightly higher results as per the plot below - findings show strategy returns sit between 0.8-1, versus 0.6-0.8 with the baseline model (see plot above). 
   
 ![Tuned Model - Actual Returns vs Strategy Returns ](actual_vs_strategy_cumreturns_windows=20,200_8mo.png)
 
@@ -36,7 +36,7 @@ The performance of the baseline trading algorithm is subpar, evident from the co
 
 As per the plot below, it appears the new model performs better than the baseline model. The strategy returns initially peaks while actual returns declines, however thereafter strategy returns continue on a downwards trend and end off in 2021 around ~0.7 - which ends up being a similar end point to the baseline model in 2021 at ~0.7 as well. 
  
- Did this new model perform better or worse than your tuned trading algorithm?
+**Did this new model perform better or worse than your tuned trading algorithm?**
 
 The new model initially performs better than the tuned trading agorithim in 2016-2017, however it then drops below 0.9 and ends just below 0.7. The tuned model begins to increase in 2019 and ends in 2021 above 0.8. Overall,  the tuning algorithim performs slightly better than the new model. 
 
